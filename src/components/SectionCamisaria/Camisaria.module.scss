@@ -1,0 +1,199 @@
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 3rem;
+
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 1366px;
+        
+
+        @media (max-width: 1300px) {
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+        .imgContainer {
+            width: 510px;
+            height: 510px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width: 920px) {
+                width: 85%;
+                height: 85%;
+            }
+
+            .img {
+
+                background-image: url('/images/camisaria.svg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+
+                width: 488px;
+                height: 530px;
+                z-index: 1;
+                background-position: left;
+                transition: 0.4s;
+
+                
+                
+                
+
+                @media (max-width: 920px) {
+                    width: 388px;
+                    height: 430px;
+                 
+                }
+            }
+
+            .line {
+                position: absolute;
+                top: 4px;
+                width: 100%;
+                height: 79%;
+                border: 1px solid var(--blue2);
+                z-index: 2;
+                transition: 0.4s;
+
+                
+
+                @media (max-width: 920px) {
+                    height: 77%;
+                    top: 10px;
+                    width: 107%;
+                    
+                }
+            }
+
+            &:hover {
+
+                .img {
+                    transform: scale(1.02);
+                }
+
+                .line {
+                    border: 1px solid transparent;
+                    top:-13px;
+                    height: 86%;
+                    width: 98%;
+                    background-color: #001A249C;
+                    ;
+                }
+                 
+            }
+        }
+
+
+        .textContainer {
+            border: 1px solid var(--gray2);
+            border-left: none;
+            padding: 1.6rem 6rem 1.6rem 8.4rem;
+            margin-bottom: 7rem;
+
+            @media (max-width: 1300px) {
+                padding: 0;
+                border: none;
+                border-bottom: 1px solid var(--gray2);
+                margin-bottom: 0;
+            }
+
+
+            h2 {
+                font-family: Cormorant;
+                font-size: 62px;
+                font-weight: 300;
+                line-height: 75px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: var(--blue4);
+                text-transform: uppercase;
+
+                @media (max-width: 720px) {
+                    font-size: 50px;
+                    line-height: 61px;
+                }
+
+            }
+
+            strong {
+                font-family: Lato;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: var(--gray2);
+                
+
+
+
+            }
+
+            .lists {
+                display: flex;
+                margin: 2rem 0 2rem 2rem;
+
+                @media (max-width: 1300px) {
+                           
+                    flex-direction: column;
+                    justify-content: center;
+                    margin: 3rem;
+                }
+
+                ul {
+
+
+
+                    li {
+
+                        font-family: Cormorant;
+                        font-size: 24px;
+                        font-style: italic;
+                        font-weight: 400;
+                        line-height: 29px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: var(--gray-text-light);
+
+
+
+                    }
+                }
+
+                .list1 {
+                    margin-right: 5rem;
+
+                    @media (max-width: 1300px) {
+                           
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            .button {
+                width: 100%;
+
+                @media (max-width: 1300px) {
+                    display: none
+                }
+            }
+
+          
+
+        }
+
+    }
+
+
+}

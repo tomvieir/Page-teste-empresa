@@ -1,0 +1,39 @@
+.titleContainer {
+    display: flex;
+    margin-bottom: 3rem;
+
+    @media (max-width: 720px){
+        display: flex;
+        justify-content: center;  
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            font-family: 'Cormorant', sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 38px;
+            line-height: 46px;
+            color: var(--blue1);
+            margin-bottom: .5rem;
+        }
+
+        span {
+            height: 1px;
+            width: 53px;
+            border-radius: 0px;
+            background-color: var(--blue7);
+            transition: 0.5s;
+        }
+
+        &:hover {
+            span {
+                width: 100%;
+            }
+        }
+    }
+}

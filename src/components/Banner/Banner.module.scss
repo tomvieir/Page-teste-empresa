@@ -1,0 +1,152 @@
+.container {
+    width: 100%;
+    height: 39.375rem;
+    background-image: url('/images/banner.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+        background-position:calc(50% - 6.25rem) center;
+        height: 100vh;
+    }
+
+    .content {
+        max-width: 85.375rem;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 1.25rem;
+        margin-left: 10rem;
+
+        @media (max-width: 1300px) {
+            margin-left: 0;
+        }
+        
+        .logoContainer {
+            height: 4.125rem;
+            width: 9.25rem;
+            margin-bottom: 3rem ;
+            display: none;
+
+            @media (max-width: 768px) {
+                display: block;
+            }
+            
+            .logo {
+                height: 100%;
+                width: 100%;
+                background-image: url('/images/logo1.svg');
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+        }
+    
+        .infos {
+            display: flex;
+            flex-direction: column;
+            max-width: 25.25rem;
+            width: 100%;
+            margin-bottom: 3rem;
+            
+
+            @media (max-width: 840px) {
+                padding:0 2rem
+            }
+            
+            .title1 {
+               font-family: "Playfair Display";
+               font-style: italic;
+               font-weight: 400;
+               font-size: 2rem;
+               color: var(--gold);
+               animation: zoom 25s;
+            }
+
+            .title2 {  
+                width: 100%; 
+                color: #024B68AD;
+                font-family: "Playfair Display",Sans-serif;
+                font-size: 5.6rem;
+                font-weight: 400;
+                text-transform: uppercase;
+                line-height: 3.75rem;
+                margin: 20px 0;
+                display: flex;
+                justify-content: center;
+                animation: zoom 25s;
+
+                @media (max-width: 768px){
+                    font-size: 4rem;
+                }
+            }
+
+            .title3 {
+                display: flex;
+                flex-direction: row-reverse;
+                font-family: "Playfair Display";
+                font-style: italic;
+                font-weight: 400;
+                font-size: 2.035rem;
+                color: var(--gold);
+                animation: zoom 25s;
+            }
+
+            .subtitleContainer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5.313rem;
+                margin-bottom: 1.25rem;
+                animation: zoom 25s;
+
+                strong {
+                    font-family: Lato;
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                    line-height: 31px;
+                    text-transform: uppercase;
+                    color: var(--background);
+
+                    span {
+                        font-family: Lato;
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        text-align: left;
+                    }
+                }
+            }
+
+            .buttonContainer{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 1.875rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 0;
+            margin-top: 4rem;
+            max-width: 100%; 
+        }
+    }
+}
+
+
+@keyframes zoom {
+    0%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
